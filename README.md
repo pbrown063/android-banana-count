@@ -72,7 +72,35 @@ android-banana-count/
 4. Watch your banana count increase!
 5. Keep tapping to count more bananas 🍌
 
-## 🧪 Testing
+## 🧪 Testing Locally
+
+### Quick Start (Linux)
+
+Run the app on an emulator:
+```bash
+./run-emulator.sh
+```
+
+This script will:
+1. Start the Android emulator (Pixel 5 API 34)
+2. Build the app
+3. Install it on the emulator
+4. Launch the app automatically
+
+### Manual Testing
+
+Build the app:
+```bash
+export ANDROID_HOME=~/Android/Sdk
+./gradlew assembleDebug
+```
+
+Install on connected device/emulator:
+```bash
+./gradlew installDebug
+```
+
+### Unit Tests
 
 Run unit tests:
 ```bash
